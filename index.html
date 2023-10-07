@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="index.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+</head>
+<body>
+    <div class="body">
+        <form action="">
+            <div id="upperbody">
+                <input class="screen" name="display" id="pickme" value="" placeholder="Enter value or key numbers" title="feed me numbers silly" autocomplete="off">
+                <input class="result" name="display" id="result" value="" placeholder="Result" title="I show result since you cant clearly calculate yourself" autocomplete="off" disabled>
+            </div>
+            <div id="lowerbody">
+                <div class="buttons">
+                    <input id="lt" type="button" value="AC" onclick="ac()">
+                    <input id="lt" type="button" value="DEL" onclick="del()">
+                    <input type="button" value="(" onclick="openb()" title="(:">
+                    <input type="button" value=")" onclick="closeb()" title=":)">
+                </div>
+                <div class="buttons">
+                    <input type="button" value="7" onclick="seven()">
+                    <input type="button" value="8" onclick="eight()">
+                    <input type="button" value="9" onclick="nine()">
+                    <input type="button" value="X" onclick="mul()" title="what are you? 9?">
+                </div>
+                <div class="buttons">
+                    <input type="button" value="4" onclick="four()">
+                    <input type="button" value="5" onclick="five()">
+                    <input type="button" value="6" onclick="six()">
+                    <input type="button" value="-" onclick="mini()" title="bro... i could do that when i was 4yo">
+                </div>
+                <div class="buttons">
+                    <input type="button" value="1" onclick="one()">
+                    <input type="button" value="2" onclick="two()">
+                    <input type="button" value="3" onclick="three()">
+                    <input type="button" value="+" onclick="plus()" title="just forget about it... you are helpless">
+                </div>
+                <div class="buttons">
+                    <input type="button" value="0" onclick="zero()">
+                    <input type="button" value="." onclick="dot()">
+                    <input type="button" value="/" onclick="div()" title="i dont mind this one">
+                    <input type="button" value="=" onclick="calculate()">
+                </div>
+            </div>
+        </form>
+    </div>
+
+
+    <script src="index.js"></script>
+</body>
+</html>
